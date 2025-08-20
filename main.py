@@ -22,6 +22,6 @@ def heads_tails():
 
 #main program
 print("Hi! Welcome to my Heads or Tails game")
-first_name = str(input("What is your name"))
-age = int(input("What is your age"))
+first_name = str(input("What is your name? "))
+age = int(input("What is your age? "))
 heads_tails() #This calls up the function
