@@ -1,5 +1,13 @@
+'''
+    author: Thisun
+    date: 22/08/2025
+    version: 1.0.0
+    description: A heads or tails guessing game.
+'''
+#-----------------libraries-------------------------------
 import random
-
+#-----------------functions-------------------------------
+#This functions chooses heads or tails and asks the user to make a guess.
 def heads_tails():
     user_score = 0
     computer_score = 0
@@ -20,7 +28,7 @@ def heads_tails():
     else:
         print("{}, you lost that game".format(first_name))
 
-#main program
+#-----------------main program-----------------------
 print("Hi! Welcome to my Heads or Tails game")
 first_name = str(input("What is your name? "))
 age = int(input("What is your age? "))
