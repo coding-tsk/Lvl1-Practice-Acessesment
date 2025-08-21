@@ -28,8 +28,17 @@ def heads_tails():
     else:
         print("{}, you lost that game".format(first_name))
 
+#Forces the user to enter a valid name
+def force_name():
+    name = input("What is your name? ") #takes initial input
+    MIN_NAME_LENGTH = 2
+    MAX_NAME_LENGTH = 10
+    while len(name) < MIN_NAME_LENGTH or len(name) > MAX_NAME_LENGTH: #repeats until name has valid length
+        name = input("Invalid name length. Please enter a valid name: ")
+    return name #returns the valid name
+
 #-----------------main program-----------------------
 print("Hi! Welcome to my Heads or Tails game")
-first_name = str(input("What is your name? "))
+first_name = force_name() #gets name using force_name
 age = int(input("What is your age? "))
 heads_tails() #This calls up the function
